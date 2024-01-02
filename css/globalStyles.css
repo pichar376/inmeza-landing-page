@@ -2,6 +2,8 @@
   --primary-color: #95407a;
   --secondary-color: #fbeff4;
 }
+
+/* general reset */
 *,
 *:after,
 *:before {
@@ -20,6 +22,7 @@
   }
 }
 .container {
+  position: relative;
   background: var(--secondary-color);
   display: flex;
   flex-flow: column wrap;
@@ -338,4 +341,35 @@ main {
 .footer_img {
   width: 100%;
   margin-bottom: 0.5rem;
+}
+.display--flex {
+  display: flex;
+}
+.display--none {
+  display: none;
+}
+.modal-container {
+  background-color: #00000090;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: thin solid grey;
+  justify-content: center;
+  align-items: center;
+  z-index: 995;
+}
+.modal-container__figure {
+  position: relative;
+  width: 8rem;
+  z-index: 999;
+
+  @media (min-width: 650px) {
+    width: 15rem;
+  }
+}
+.modal__img {
+  position: relative;
+  width: 100%;
 }
