@@ -363,7 +363,7 @@ main {
 .modal-container__figure {
   position: relative;
   width: 8rem;
-  z-index: 999;
+  z-index: 997;
 
   @media (min-width: 650px) {
     width: 15rem;
@@ -372,4 +372,15 @@ main {
 .modal__img {
   position: relative;
   width: 100%;
+}
+.button-close-modal {
+  position: absolute;
+  background-color: transparent;
+  top: 4px;
+  right: 4px;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 999;
 }
