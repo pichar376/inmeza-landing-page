@@ -20,10 +20,10 @@
 .container {
   background: var(--secondary-color);
   width: 340px;
-  min-width: 320px;
-  height: 100vh;
+  min-width: 340px;
   margin: 0 auto;
   display: flex;
+  flex-flow: column wrap;
 }
 
 main {
@@ -172,9 +172,92 @@ main {
 .invitation-figure {
   display: flex;
   justify-content: flex-start;
-  width: 60%;
+  width: 85%;
   height: 100%;
 }
 .invitation-figure__img {
   width: 100%;
+}
+
+.card-map {
+  display: flex;
+  width: 100%;
+  height: 25%;
+}
+
+.card-map__figure {
+  width: 60%;
+  padding: 1rem 0 1rem 1rem;
+}
+.card-map__img {
+  width: 100%;
+}
+
+.card-map__schedule {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  color: var(--primary-color);
+  width: 40%;
+  font-size: 6px;
+  font-weight: 900;
+}
+
+.card-map__schedule-text {
+  width: 100%;
+}
+.card-schedule-text__item {
+  font-size: 5.5px;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+}
+.text__item--mb {
+  margin-bottom: 0.7rem;
+}
+
+.text--mr {
+  margin-right: 2rem;
+}
+.card-map__warning-text {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.card-map__button-container {
+  text-align: center;
+}
+.card-map__button {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-style: none;
+  border-radius: 8px;
+  width: 5rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.1em;
+  letter-spacing: 0.8px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.footer__title {
+  width: 100%;
+  color: var(--secondary-color);
+  font-weight: 100;
+  font-size: 0.4em;
+  text-align: center;
+  padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+}
+.footer__icons {
+  width: 16.5rem;
+}
+
+.footer_img {
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
