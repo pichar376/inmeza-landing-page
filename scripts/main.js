@@ -16,7 +16,7 @@ const openModal = () => {
   setTimeout(() => {
     modal.classList.remove("display--none")
     modal.classList.add("display--flex")
-  }, 3000);
+  }, 30000);
 }
 
 
