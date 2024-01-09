@@ -1,6 +1,8 @@
 :root {
   --primary-color: #95407a;
   --secondary-color: #fbeff4;
+  --font-size-medium: 22.5px;
+  --font-size-large: 26px;
 }
 
 /* general reset */
@@ -18,18 +20,17 @@
   background: #f5f5f5;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  @media (min-width: 650px) {
-  }
 }
 .container {
   position: relative;
   background: var(--secondary-color);
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  margin: 2rem auto;
   min-width: 340px;
   max-width: 2358px;
-  width: 100%;
-  margin: 0 auto;
+  width: 340px;
+
   @media (min-width: 650px) {
     width: 650px;
   }
@@ -43,36 +44,35 @@ main {
 }
 .section-titles {
   display: flex;
-  @media (min-width: 650px) {
-    height: 36vh;
-  }
 }
 .card-laptop {
   background: var(--primary-color);
   color: white;
-  height: 80px;
-  width: 50%;
-  @media (min-width: 650px) {
-    height: 8rem;
-  }
+  width: 661.5px;
+  height: 405px;
+  flex-shrink: 0;
 }
 
 .card-laptop__titles {
+  color: var(--secondary-color);
   position: relative;
   display: flex;
   font-weight: 300;
   flex-flow: column wrap;
   align-items: flex-end;
-  padding: 0.7rem;
+  padding: 3.128em;
   margin-bottom: 0.5rem;
 }
 .card-laptop__rectangle {
-  right: -2.6rem;
-  bottom: -14rem;
+  right: -1.8rem;
+  bottom: -10.5rem;
   position: absolute;
+  top: 48.984em;
+  left: 19.921em;
+  right: -4.781em;
   background-color: var(--secondary-color);
   width: 75%;
-  height: 6rem;
+  height: 2.5rem;
   @media (min-width: 650px) {
     right: -3.6rem;
     bottom: -20rem;
@@ -80,45 +80,37 @@ main {
   }
 }
 .card-laptop__title {
-  width: 6rem;
-  @media (min-width: 650px) {
-    width: 12rem;
-  }
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .card-laptop-subtitle {
-  font-size: 0.4em;
-  font-weight: 300;
-  padding-right: 0.3rem;
-  @media (min-width: 650px) {
-    font-size: 1em;
-  }
+  font-size: 33.75px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .figure-laptop {
-  width: 12rem;
+  width: 9rem;
   position: relative;
   z-index: 1;
-  left: 20px;
+  left: 6.555em;
   top: -13px;
-  @media (min-width: 650px) {
-    width: 17rem;
-    left: 40px;
-    top: -13px;
-  }
+  width: 609.12px;
+  height: 675.909px;
+  flex-shrink: 0;
 }
 
 .figure-laptop__img {
   width: 100%;
+  z-index: 999;
 }
 
 .inmeza-info-container {
-  margin: 1rem auto 0.5rem auto;
+  margin: 0.809em auto 2.195em auto;
   display: flex;
-  height: 100%;
   flex-flow: column nowrap;
-  width: 60%;
-
-  @media (min-width: 650px) {
-  }
 }
 .inmeza-info {
   display: flex;
@@ -126,17 +118,13 @@ main {
   height: 60%;
   flex-flow: column nowrap;
   align-items: center;
-  gap: 0.6rem;
-  margin-left: 1rem;
-  @media (min-width: 650px) {
-    margin-top: 2rem;
-  }
+  gap: 2.995em;
+  margin: 0.5rem auto 2rem auto;
 }
 .inmeza-info__title {
-  width: 7rem;
-  @media (min-width: 650px) {
-    width: 8.5rem;
-  }
+  width: 442.812px;
+  height: 118.819px;
+  flex-shrink: 0;
 }
 
 .inmeza-info__image {
@@ -150,28 +138,22 @@ main {
   align-items: center;
 }
 .inmeza-info-date__title {
-  font-weight: 600;
-  font-size: 0.8em;
-  @media (min-width: 650px) {
-    font-weight: 800;
-    font-size: 1.3em;
-  }
+  font-size: 67.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .inmeza-info-date__subtitle {
   display: flex;
-  font-size: 4px;
   justify-content: flex-end;
-  letter-spacing: 0.2px;
   width: 100%;
-  font-weight: 900;
-  @media (min-width: 650px) {
-    font-size: 7px;
-    justify-content: center;
-  }
+  font-size: var(--font-size-medium);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .inmeza-info-adress {
-  width: 80%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -179,20 +161,17 @@ main {
 
 .inmeza-info-adress__text-item {
   color: var(--primary-color);
-  font-size: 4px;
   text-align: center;
-  @media (min-width: 650px) {
-    font-size: 8px;
-  }
+  font-size: 1.39em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.inmeza-info-adress__text--line-medium {
-  line-height: 1.6;
-}
+
 .inmeza-info-icons__images {
-  width: 8rem;
-  @media (min-width: 650px) {
-    width: 12rem;
-  }
+  width: 473.002px;
+  height: 71.114px;
+  flex-shrink: 0;
 }
 .inmeza-info-icons__img {
   width: 100%;
@@ -200,16 +179,19 @@ main {
 .invitation-card {
   margin-top: 2rem;
   display: flex;
+  flex-flow: row nowrap;
   background: var(--primary-color);
-  width: 100%;
+  width: 1440px;
+  height: 716.25px;
+  flex-shrink: 0;
 }
 .invitation__text {
   display: flex;
+  flex-basis: 58%;
   flex-flow: row wrap;
   justify-content: flex-end;
-  width: 55%;
   padding: 0.4rem 0 0.04rem 0.04rem;
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
   margin-left: 3.5rem;
   padding-bottom: 1rem;
 
@@ -220,17 +202,11 @@ main {
   }
 }
 .invitation__text-item {
-  font-size: 6px;
-  font-weight: 100;
   color: var(--secondary-color);
-  width: 100%;
-  letter-spacing: 1.6;
-  margin-bottom: 0.5rem;
-  @media (min-width: 650px) {
-    font-size: 10px;
-    letter-spacing: 1;
-    margin-bottom: 0;
-  }
+  font-size: 1.406em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .invitation__bold-text {
   font-weight: 600;
@@ -254,15 +230,16 @@ main {
 }
 
 .card-map__figure {
-  width: 60%;
-  padding: 1rem 0 1rem 1rem;
+  width: 900.257px;
+  height: 504.302px;
+  flex-shrink: 0;
+  margin: 5.055em auto 3.504em auto;
 }
 .card-map__img {
   width: 100%;
 }
 
 .card-map__schedule {
-  margin-top: 1rem;
   display: flex;
   flex-flow: column nowrap;
   color: var(--primary-color);
@@ -272,47 +249,51 @@ main {
 }
 
 .card-map__schedule-text {
-  width: 100%;
+  margin-top: 4.546em;
 }
 .card-schedule-text__item {
-  font-size: 5.5px;
-  letter-spacing: 0.2px;
-  line-height: 1.5;
-  @media (min-width: 650px) {
-    font-size: 10px;
-  }
-}
-.text__item--mb {
-  margin-bottom: 0.7rem;
+  font-size: var(--font-size-medium);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.text--mr {
-  margin-right: 2rem;
+/* title schedule: change to font-size and margin */
+.text__item--mb {
+  margin-bottom: 35.25px;
+  font-size: 26.5px;
 }
+
 .card-map__warning-text {
-  font-size: 1.5em;
+  margin: 44px auto;
+  padding: 7.5px;
   text-align: center;
-  padding: 0.8rem;
-  @media (min-width: 650px) {
-    font-size: 2.5em;
-  }
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .card-map__button-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  width: 382.5px;
+  height: 102px;
+  flex-shrink: 0;
 }
 .card-map__button {
   color: var(--secondary-color);
-  background-color: var(--primary-color);
+  background-color: transparent;
   border-style: none;
   border-radius: 8px;
-  width: 5rem;
-  padding: 0.7rem 1rem;
-  font-size: 1.1em;
-  letter-spacing: 0.8px;
-  @media (min-width: 650px) {
-    font-size: 1.8;
-  }
+  font-size: var(--font-size-medium);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .footer {
   display: flex;
@@ -335,11 +316,7 @@ main {
 }
 .footer__icons {
   width: 16.5rem;
-  @media (min-width: 650px) {
-    width: 20rem;
-  }
 }
-
 .footer_img {
   width: 100%;
   margin-bottom: 0.5rem;
@@ -364,12 +341,9 @@ main {
 }
 .modal-container__figure {
   position: relative;
-  width: 8rem;
+  width: 480px;
+  height: 513px;
   z-index: 997;
-
-  @media (min-width: 650px) {
-    width: 15rem;
-  }
 }
 .modal__img {
   position: relative;
@@ -378,11 +352,11 @@ main {
 .button-close-modal {
   position: absolute;
   background-color: transparent;
-  top: 4px;
-  right: 4px;
+  top: 8px;
+  right: 8px;
   border: none;
   color: var(--secondary-color);
-  font-size: 12px;
+  font-size: var(--font-size-large);
   cursor: pointer;
   z-index: 999;
 }
