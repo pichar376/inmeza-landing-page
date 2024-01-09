@@ -2,7 +2,7 @@
   --primary-color: #95407a;
   --secondary-color: #fbeff4;
   --font-size-medium: 22.5px;
-  --font-size-large: 26px;
+  --font-size-large: 26.25px;
 }
 
 /* general reset */
@@ -29,13 +29,13 @@
   margin: 2rem auto;
   min-width: 320px;
   width: 1440px;
+  flex-shrink: 0;
 }
 
 main {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  flex-grow: 1;
 }
 .section-titles {
   display: flex;
@@ -59,20 +59,15 @@ main {
   margin-bottom: 0.5rem;
 }
 .card-laptop__rectangle {
-  right: -1.8rem;
-  bottom: -10.5rem;
   position: absolute;
   top: 48.984em;
   left: 19.921em;
   right: -4.781em;
   background-color: var(--secondary-color);
-  width: 75%;
-  height: 2.5rem;
-  @media (min-width: 650px) {
-    right: -3.6rem;
-    bottom: -20rem;
-    height: 5rem;
-  }
+  width: 471.75px;
+  height: 144.75px;
+  flex-shrink: 0;
+  z-index: 0;
 }
 .card-laptop__title {
   font-size: 60px;
@@ -87,7 +82,6 @@ main {
   line-height: normal;
 }
 .figure-laptop {
-  width: 9rem;
   position: relative;
   z-index: 1;
   left: 6.555em;
@@ -172,7 +166,6 @@ main {
   width: 100%;
 }
 .invitation-card {
-  margin-top: 2rem;
   display: flex;
   flex-flow: row nowrap;
   background: var(--primary-color);
@@ -186,15 +179,7 @@ main {
   flex-flow: row wrap;
   justify-content: flex-end;
   padding: 0.4rem 0 0.04rem 0.04rem;
-  margin-top: 2.5rem;
-  margin-left: 3.5rem;
-  padding-bottom: 1rem;
-
-  @media (min-width: 650px) {
-    margin-top: 8rem;
-    padding-bottom: 0;
-    width: 75%;
-  }
+  margin: 11.296em auto 5.468em 13.031em;
 }
 .invitation__text-item {
   color: var(--secondary-color);
@@ -218,7 +203,6 @@ main {
 }
 
 .card-map {
-  margin-top: 5rem;
   display: flex;
   width: 100%;
   height: 25%;
@@ -305,9 +289,6 @@ main {
   font-size: 0.4em;
   text-align: center;
   padding: 0.5rem 0.5rem 0.2rem 0.5rem;
-  @media (min-width: 650px) {
-    font-size: 0.7em;
-  }
 }
 .footer__icons {
   width: 16.5rem;
@@ -335,6 +316,7 @@ main {
   z-index: 995;
 }
 .modal-container__figure {
+  font-size: var(--font-size-large);
   position: relative;
   width: 480px;
   height: 513px;
@@ -347,8 +329,8 @@ main {
 .button-close-modal {
   position: absolute;
   background-color: transparent;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  right: 12px;
   border: none;
   color: var(--secondary-color);
   font-size: var(--font-size-large);
