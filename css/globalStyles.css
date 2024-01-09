@@ -1,7 +1,8 @@
 :root {
   --primary-color: #95407a;
   --secondary-color: #fbeff4;
-  --secondary-font-size: 22.5px;
+  --font-size-medium: 22.5px;
+  --font-size-large: 26px;
 }
 
 /* general reset */
@@ -26,6 +27,7 @@
   display: flex;
   flex-flow: column wrap;
   margin: 2rem auto;
+  min-width: 320px;
   width: 1440px;
   flex-shrink: 0;
 }
@@ -134,7 +136,7 @@ main {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  font-size: var(--secondary-font-size);
+  font-size: var(--font-size-medium);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -229,7 +231,7 @@ main {
   margin-top: 4.546em;
 }
 .card-schedule-text__item {
-  font-size: var(--secondary-font-size);
+  font-size: var(--font-size-medium);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -267,7 +269,7 @@ main {
   background-color: transparent;
   border-style: none;
   border-radius: 8px;
-  font-size: var(--secondary-font-size);
+  font-size: var(--font-size-medium);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -318,7 +320,8 @@ main {
 }
 .modal-container__figure {
   position: relative;
-  width: 8rem;
+  width: 480px;
+  height: 513px;
   z-index: 997;
 }
 .modal__img {
@@ -328,11 +331,11 @@ main {
 .button-close-modal {
   position: absolute;
   background-color: transparent;
-  top: 4px;
-  right: 4px;
+  top: 8px;
+  right: 8px;
   border: none;
   color: var(--secondary-color);
-  font-size: 12px;
+  font-size: var(--font-size-large);
   cursor: pointer;
   z-index: 999;
 }
