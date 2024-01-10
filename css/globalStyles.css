@@ -26,7 +26,6 @@
   background: var(--secondary-color);
   display: flex;
   flex-flow: column wrap;
-  margin: 2rem auto;
   min-width: 320px;
   width: vw;
   flex-shrink: 0;
