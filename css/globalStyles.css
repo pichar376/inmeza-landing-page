@@ -28,7 +28,7 @@
   flex-flow: column wrap;
   margin: 2rem auto;
   min-width: 320px;
-  width: 1440px;
+  width: vw;
   flex-shrink: 0;
 }
 
