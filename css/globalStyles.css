@@ -285,13 +285,19 @@ main {
 .footer__title {
   width: 100%;
   color: var(--secondary-color);
+  margin: 36px auto 12.3px auto;
   font-weight: 100;
-  font-size: 0.4em;
   text-align: center;
-  padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  font-size: var(--font-size-medium);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .footer__icons {
-  width: 16.5rem;
+  width: 993.276px;
+  height: 58.862px;
+  margin-bottom: 91.32px;
+  flex-shrink: 0;
 }
 .footer_img {
   width: 100%;
