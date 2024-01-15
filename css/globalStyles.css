@@ -4,7 +4,6 @@
   --font-size-medium: 22.5px;
   --font-size-large: 26.25px;
 }
-
 /* general reset */
 *,
 *:after,
@@ -26,8 +25,7 @@
   background: var(--secondary-color);
   display: flex;
   flex-flow: column wrap;
-  min-width: 320px;
-  width: vw;
+  width: 1440px;
   flex-shrink: 0;
 }
 
