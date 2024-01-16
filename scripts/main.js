@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //function to add classes and have timer to disable them
 const openModal = () => {
-  modal.classList.add("display--none")
   setTimeout(() => {
     modal.classList.remove("display--none")
     modal.classList.add("display--flex")
